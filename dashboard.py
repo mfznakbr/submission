@@ -55,7 +55,7 @@ st.metric("Total Penyewaan", filtered_df["cnt"].sum())
 st.metric("Rata-rata Penyewaan", filtered_df["cnt"].mean())
 
 # Barplot Total & Rata-rata Penyewaan per Musim
-fig, ax = plt.subplots(1, 2, figsize=(14, 5))
+fig, ax = plt.subplots(1, 2, figsize=(16, 8))
 
 # Total Penyewaan per Musim
 sns.barplot(x="season", y="total_rentals", data=seasonal_summary, palette="Blues", ax=ax[0])
@@ -68,7 +68,7 @@ ax[1].set_title("Rata-rata Penyewaan Sepeda per Musim")
 st.pyplot(fig)
 
 # 🔹 Line Chart Rata-rata Penyewaan Sepeda per Jam
-fig, ax = plt.subplots(figsize=(10, 5))
+fig, ax = plt.subplots(figsize=(12, 6))
 ax.plot(hourly_summary["hr"], hourly_summary["average_rentals"], marker="o", linestyle="-", color="b")
 
 # Tambahkan label angka di tiap titik
@@ -82,10 +82,10 @@ ax.set_ylabel("Jumlah Penyewaan", fontsize=12)
 ax.set_xticks(range(24))
 ax.grid(True, linestyle="--", alpha=0.6)
 
-st.pyplot(fig)  # ⬅️ Menampilkan grafik pertama
+st.pyplot(fig) 
 
 # 🔹 Line Chart Total Penyewaan Sepeda per Jam
-fig, ax = plt.subplots(figsize=(10, 5))
+fig, ax = plt.subplots(figsize=(12, 6))
 ax.plot(hourly_summary["hr"], hourly_summary["total_rentals"], marker="s", linestyle="--", color="r")
 
 # Tambahkan label angka di tiap titik
