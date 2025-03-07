@@ -5,9 +5,11 @@ import streamlit as st
 
 
 sns.set(style='dark')
+url1 = 'https://raw.githubusercontent.com/mfznakbr/submission/main/day.csv'
+days_df = pd.read_csv(url1)
 
-days_df = pd.read_csv('https://github.com/mfznakbr/submission/blob/main/day.csv')
-hour_df = pd.read_csv('https://github.com/mfznakbr/submission/blob/main/hour.csv')
+url2 = 'https://github.com/mfznakbr/submission/blob/main/hour.csv'
+hour_df = pd.read_csv(url2)
 
 musim_filter = st.sidebar.selectbox("""
 silahkan pilih musim 🥶:\n
