@@ -6,7 +6,7 @@ import streamlit as st
 
 sns.set(style='dark')
 
-days_df = pd.read_csv('C:\\Users\\Asus\\codingcampp\\Project_dasboard\\day.csv')
+days_df = pd.read_csv('https://github.com/mfznakbr/submission/blob/main/day.csv')
 hour_df = pd.read_csv('C:\\Users\\Asus\\codingcampp\\Project_dasboard\\hour.csv')
 
 musim_filter = st.sidebar.selectbox("""
