@@ -58,11 +58,11 @@ st.metric("Rata-rata Penyewaan", filtered_df["cnt"].mean())
 fig, ax = plt.subplots(1, 2, figsize=(16, 8))
 
 # Total Penyewaan per Musim
-sns.barplot(x="season", y="total_rentals", data=seasonal_summary, palette="Blues", ax=ax[0])
+sns.barplot(x="season", y="total_rentals", data=seasonal_summary, color='#17BECF', ax=ax[0])
 ax[0].set_title("Total Penyewaan Sepeda per Musim")
 
 # Rata-rata Penyewaan per Musim
-sns.barplot(x="season", y="average_rentals", data=seasonal_summary, palette="Oranges", ax=ax[1])
+sns.barplot(x="season", y="average_rentals", data=seasonal_summary, color-'#FFC20A', ax=ax[1])
 ax[1].set_title("Rata-rata Penyewaan Sepeda per Musim")
 
 st.pyplot(fig)
