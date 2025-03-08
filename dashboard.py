@@ -62,7 +62,7 @@ sns.barplot(x="season", y="total_rentals", data=seasonal_summary, color='#17BECF
 ax[0].set_title("Total Penyewaan Sepeda per Musim")
 
 # Rata-rata Penyewaan per Musim
-sns.barplot(x="season", y="average_rentals", data=seasonal_summary, color-'#FFC20A', ax=ax[1])
+sns.barplot(x="season", y="average_rentals", data=seasonal_summary, color='#FFC20A', ax=ax[1])
 ax[1].set_title("Rata-rata Penyewaan Sepeda per Musim")
 
 st.pyplot(fig)
